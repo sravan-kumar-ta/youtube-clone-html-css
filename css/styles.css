@@ -61,3 +61,51 @@ body {
     border: none;
     border-radius: 0;
 }
+
+/* main body starts */
+.main-body {
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+}
+
+/* side bar stats */
+.side-bar {
+    height: 100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.sidebar-categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.sidebar-category {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.sidebar-category span {
+    margin-left: 15px;
+}
+
+.sidebar-category:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
