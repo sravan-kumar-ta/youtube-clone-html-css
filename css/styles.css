@@ -124,14 +124,13 @@ hr {
 .videos-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .video {
     width: 300px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin: 0 5px 30px 5px;
 }
 
 .video-thumbnail {
@@ -180,4 +179,36 @@ h1 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(3, 3, 3);
+}
+
+@media (max-width: 425px) {
+    .header-search, .side-bar {
+        display: none;
+    }
+
+    .header-icons .material-icons{
+        display: none;
+    }
+
+    .header-icons .display-this {
+        display: inline;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-search, .side-bar {
+        display: none;
+    }
+    .show-sidebar {
+        display: inline;
+        position: fixed;
+        top: 4.4rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 928px){
+    .header-search {
+        width: 300px;
+    }
 }
